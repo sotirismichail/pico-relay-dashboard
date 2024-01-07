@@ -20,7 +20,7 @@ Afterwards, copy the latest Pico firmware and the contents of the "pico-control"
 
 To deploy the control dashboard, you need to create an .env file based on the sample file provided. After setting your access credentials there, set the users in the rabbitmq/definitions file, ensuring that the relay's credentials match the ones set in the previous step.
 
-After setting the users, simple run
+After setting the users, simply run
 
 `docker compose build && docker compose up`
 
