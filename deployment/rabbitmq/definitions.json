@@ -1,0 +1,22 @@
+{
+    "vhosts": [
+      { "name": "/" }
+    ],
+    "users": [
+      { "name": "relay_user", "password": "relay_pass", "tags": "" },
+      { "name": "dashboard_user", "password": "dashboard_pass", "tags": "" },
+      { "name": "mq_user", "password": "mq_pass", "tags": "administrator" }
+    ],
+    "permissions": [
+      { "user": "relay_user", "vhost": "/", "configure": ".*", "write": ".*", "read": ".*" },
+      { "user": "dashboard_user", "vhost": "/", "configure": ".*", "write": ".*", "read": ".*" },
+      { "user": "mq_user", "vhost": "/", "configure": ".*", "write": ".*", "read": ".*" }
+    ],
+    "queues": [
+      { "name": "control.relays.status", "vhost": "/", "durable": true }
+    ],
+    "bindings": [
+      { "source": "amq.topic", "vhost": "/", "destination": "control.relays.status", "destination_type": "queue", "routing_key": "control.relays.status.*" }
+    ]
+  }
+  

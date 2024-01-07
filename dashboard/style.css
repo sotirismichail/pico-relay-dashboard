@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+#dashboard {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#controls button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.status-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: grey;
+    display: inline-block;
+    margin: 5px;
+}
+
+.status-indicator.on {
+    background-color: green;
+}
+
+.status-indicator.off {
+    background-color: red;
+}
+
+#temperature-display {
+    margin-top: 20px;
+    font-size: 1.5em;
+}

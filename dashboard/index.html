@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relay Control Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="dashboard">
+        <h1>WaveShare Pico-Relay-B</h1>
+        <div id="temperature-display">
+            <h2>Temperature</h2>
+            <span id="temp-value">--</span> °C
+        </div>
+        <div class="relay-box" id="relay1">
+            <h2>Relay 1</h2>
+            <div class="status-indicator" id="status-ch1"></div>
+            <button class="relay-control" data-board="picorelay" data-relay="ch1" data-action="up">Up</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch1" data-action="down">Down</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch1" data-action="cycle">Cycle</button>
+        </div>
+        <div class="relay-box" id="relay2">
+            <h2>Relay 2</h2>
+            <div class="status-indicator" id="status-ch2"></div>
+            <button class="relay-control" data-board="picorelay" data-relay="ch2" data-action="up">Up</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch2" data-action="down">Down</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch2" data-action="cycle">Cycle</button>
+        </div>
+        <div class="relay-box" id="relay3">
+            <h2>Relay 3</h2>
+            <div class="status-indicator" id="status-ch3"></div>
+            <button class="relay-control" data-board="picorelay" data-relay="ch3" data-action="up">Up</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch3" data-action="down">Down</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch3" data-action="cycle">Cycle</button>
+        </div>
+        <div class="relay-box" id="relay4">
+            <h2>Relay 4</h2>
+            <div class="status-indicator" id="status-ch4"></div>
+            <button class="relay-control" data-board="picorelay" data-relay="ch4" data-action="up">Up</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch4" data-action="down">Down</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch4" data-action="cycle">Cycle</button>
+        </div>
+        <div class="relay-box" id="relay5">
+            <h2>Relay 5</h2>
+            <div class="status-indicator" id="status-ch5"></div>
+            <button class="relay-control" data-board="picorelay" data-relay="ch5" data-action="up">Up</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch5" data-action="down">Down</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch5" data-action="cycle">Cycle</button>
+        </div>
+        <div class="relay-box" id="relay6">
+            <h2>Relay 6</h2>
+            <div class="status-indicator" id="status-ch6"></div>
+            <button class="relay-control" data-board="picorelay" data-relay="ch6" data-action="up">Up</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch6" data-action="down">Down</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch6" data-action="cycle">Cycle</button>
+        </div>
+        <div class="relay-box" id="relay7">
+            <h2>Relay 7</h2>
+            <div class="status-indicator" id="status-ch7"></div>
+            <button class="relay-control" data-board="picorelay" data-relay="ch7" data-action="up">Up</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch7" data-action="down">Down</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch7" data-action="cycle">Cycle</button>
+        </div>
+        <div class="relay-box" id="relay8">
+            <h2>Relay 8</h2>
+            <div class="status-indicator" id="status-ch8"></div>
+            <button class="relay-control" data-board="picorelay" data-relay="ch8" data-action="up">Up</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch8" data-action="down">Down</button>
+            <button class="relay-control" data-board="picorelay" data-relay="ch8" data-action="cycle">Cycle</button>
+        </div>
+        <div class="relay-box" id="relay-all">
+            <h2>All relays</h2>
+            <button class="relay-control" data-board="picorelay" data-relay="chall" data-action="up">All Relays Up</button>
+            <button class="relay-control" data-board="picorelay" data-relay="chall" data-action="down">All Relays Down</button>
+            <button class="relay-control" data-board="picorelay" data-relay="chall" data-action="cycle">Cycle All Relays</button>
+        </div>
+    </div>
+    <script src="node_modules/@stomp/stompjs/bundles/stomp.umd.min.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
